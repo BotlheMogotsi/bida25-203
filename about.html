@@ -39,22 +39,65 @@
     border: 5px green solid;
     margin:110px;
   }
-  
+  @media(max-width: 600px){
+     .navbar-collapse .nav-link{
+        color:rgb(0, 0, 0) !important;
+     }
+    }
+    @media(min-width: 768px){
+     .navbar-brand{
+        padding-bottom: 0;
+        padding-top: 30px;
+     }}
   
  </style>
 </head>
 
 <body>
 
-  <nav>
-     <img src="logo/Acacia.png" alt="Logo" width="130" height="80" style="float: left;">   
-        <a href="index.html">Home</a> 
-        <a href="about.html">About Us</a> 
-        <a href="gallery.html">Gallery</a> 
-        <a href="contacts.html">Contact</a>
-        <a href="registration.html">Apply Now</a>
-            
-        </nav>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 105, 3); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+    <div class="container-fluid">
+
+<!-- Logo -->
+     <a class="navbar-brand">
+     <img src="logo/Acacia.png" alt="Logo" width="130" height="90" style="padding-bottom: 30px;">
+     </a>
+
+<!-- Hamburger button -->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+
+<!-- Menu links -->
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+       <li class="nav-item">
+       <a class="nav-link text-white" href="index.html">Home</a>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link text-white" href="about.html">About Us</a>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link text-white" href="gallery.html">Gallery</a>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link text-white" href="contacts.html">Contact</a>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link text-white" href="registration.html">Apply Now</a>
+       </li>
+
+    </ul>
+   </div>
+
+   </div>
+  </nav>
+
 
 <main>
 <img src="Screenshot 2026-04-14 110918.png" alt="Acacia" width="100%" height="300" style="margin:none;">
@@ -79,7 +122,7 @@
 
 <div>
   <h2 style="padding-top:30px; border-bottom: 3px green solid;">CURRICLULUMN OFFERED: PSLE</h2>
-     <table style="float: left;">
+     <table class="table table-striped" style="float: left;">
   <tr>
     <th>Standard 1-4</th>
     <th>Standard 5-7</th>
@@ -189,8 +232,8 @@
 
        <li>throughout Botswana's dusty panes,</li>
        <li> as dust falls the sunset wanes</li>
-       <li>the acaia stand out in relief</li>
-       <li style="padding-bottom: 30px;"> form of resolve...</li>
+       <li>the acacia stand out in relief</li>
+       <li style="padding-bottom: 30px;"> form of resolve, in form of belief</li>
 
        <li> Thuto, botlhaga, le kgolo-mmogo</li>
        <li>the strongest tree's always live on forever</li>
@@ -210,6 +253,9 @@
    <p>@2026 Acacia Primary & Pre-Primary School</p>
 </footer>
 </main>
+
+<button id="backToTop"></button>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
