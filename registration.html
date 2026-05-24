@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply Now</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{
+      body{
             
-            margin: 70px;
-            background-image: url(691BF2BE-C3CB-4B17-BB72-6C490AA5FFF6.JPG);
-            background-size: 100%;
-            background-repeat: repeat-y;
+         margin: 70px;
+         background-image: url(691BF2BE-C3CB-4B17-BB72-6C490AA5FFF6.JPG);
+         background-size: 100%;
+         background-repeat: repeat-y;
             
-        }
-        p{
-            font-weight: bold;
-        }
-        main{
-            background-color: white;
-            border: 5px solid green;
-            padding:50px
-        }
-        h2{
+      }
+
+      p{
+         font-weight: bold;
+      }
+
+      .btn-primary{
+         background-color: rgb(255, 221, 0);
+         color: darkgreen;
+         border-color: darkgreen;
+      }
+
+      main{
+         background-color: white;
+         border: 5px solid green;
+         padding:50px
+      }
+
+      h2{
             text-align: center;
-        }
-        
+      }
+
+      @media(max-width: 986px){
+       .navbar-collapse .nav-link{
+        color:rgb(0, 0, 0) !important;
+      }}
         
 
     </style>
@@ -35,18 +48,49 @@
 
 <body>
 
-    
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 105, 3); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+    <div class="container-fluid">
 
-        <nav>
-          <img src="logo/Acacia.png" alt="Logo" width="130" height="80" style="float: left;">
-           
-            <a href="index.html">Home</a> 
-            <a href="about.html">About Us</a> 
-            <a href="gallery.html">Gallery</a> 
-            <a href="contacts.html">Contact</a>
-            <a href="registration.html">Apply Now</a>
-            
-        </nav>
+
+     <a class="navbar-brand">
+     <img src="logo/Acacia.png" alt="Logo" width="130" height="90" style="padding-bottom: 30px;">
+     </a>
+
+
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+
+
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">Home</a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="about.html">About Us</a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="gallery.html">Gallery</a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="contacts.html">Contact</a>
+       </li>
+
+       <li class="nav-item">
+        <a class="nav-link text-white" href="registration.html">Apply Now</a>
+       </li>
+
+    </ul>
+   </div>
+
+   </div>
+  </nav>
+
         
 
 
@@ -56,40 +100,41 @@
     <img src="logo/Acacia.png" class="Acacialogo" alt="Acacia Logo" width="160" height="90">
 
     <h1 style="border: solid black thin;">ACACIA PRIMARY/PRE-PRIMARY SCHOOL APPLICATION FORM</h1>
-<div>
 
+
+<div>
     <form action="https://formspree.io/f/xwvandgo" method="POST">
         <p style="font-weight: bold;">Please note your child will NOT be tested without the following documents:</p>
            <ol>
-            <li>Child’s birth certificate (NOT clinic card)</li>
-            <li>Parents’ marriage certificate</li>
-            <li>Adoption papers (where applicable)</li>
-            <li>Adoption papers (where applicable)</li>
+             <li>Child’s birth certificate (NOT clinic card)</li>
+             <li>Parents’ marriage certificate</li>
+             <li>Adoption papers (where applicable)</li>
+             <li>Adoption papers (where applicable)</li>
            </ol>
 
            <div>
             <p style="font-weight: bold;">Application for:</p>
-            <input type="radio" id="Level" name="Level" value="Pre-School">
-            <label for="Level"> Pre-School</label><br>
-            <input type="radio" id="Level" name="Level" value="Primary">
-            <label for="Level"> Primary</label>
+              <input type="radio" id="Level" name="Level" value="Pre-School">
+             <label for="Level"> Pre-School</label><br>
+              <input type="radio" id="Level" name="Level" value="Primary">
+             <label for="Level"> Primary</label>
             </div>
 
            <div>
             <p style="font-weight: bold;">Standard applied for and year:</p>
-            <label for="Grade">Standard:</label><br>
-            <input type="text" id="Grade" name="Grade"><br>
-            <label for="Year"> Year:</label><br>
-            <input type="text" id="Year" name="Year"><br>
+             <label for="Grade">Standard:</label><br>
+              <input type="text" id="Grade" name="Grade"><br>
+             <label for="Year"> Year:</label><br>
+              <input type="text" id="Year" name="Year"><br>
            </div>
 
            <div class="form">
             <p style="font-weight: bold;"> Have you made previous application to Acacia?</p>
-            <select class="form-select" aria-label="Default select example">
-            <option selected>Open selection menu</option>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
-            </select><br>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open selection menu</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+               </select><br>
            </div>
          
         <div>
@@ -209,7 +254,7 @@
             <label for="email">E-mail Address:</label><br>
                <input type="text" id="email" name="email"><br>
             
-            <label for="contact">Contact/Phone?Cell number:</label><br>
+            <label for="contact">Contact/Phone/Cell number:</label><br>
                <input type="text" id="contact" name="contact"><br>
             
             <label for="Physicaladd">Physical Address:</label><br>
@@ -264,6 +309,8 @@
 </footer>
 
 
+<button id="backToTop">&#8593;</button>
+<scrip src="script.js"></scrip>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 

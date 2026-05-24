@@ -6,7 +6,7 @@
  <meta charset="UTF-8"> 
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
  <style>
   table, th, td {
   border: 1px solid rgb(0, 19, 0);
@@ -27,6 +27,7 @@
   h2{
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 30px;
   }
   h3{
     font-weight: bold;
@@ -36,28 +37,73 @@
     padding-bottom:10px;
   }
   body{
-    border: 5px green solid;
-    margin:110px;
+    margin:10%;
+    background-image: url(IMG_5102.PNG);
   }
-  
+  main{
+    border: 5px green solid;
+    background-color: rgb(255, 254, 245);
+    padding: 30px;
+    
+  }
+  @media(max-width: 600px){
+     .navbar-collapse .nav-link{
+        color:rgb(0, 0, 0) !important;
+     }
+    }
+ 
   
  </style>
 </head>
 
 <body>
 
-  <nav>
-     <img src="logo/Acacia.png" alt="Logo" width="130" height="80" style="float: left;">   
-        <a href="index.html">Home</a> 
-        <a href="about.html">About Us</a> 
-        <a href="gallery.html">Gallery</a> 
-        <a href="contacts.html">Contact</a>
-        <a href="registration.html">Apply Now</a>
-            
-        </nav>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 105, 3); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+    <div class="container-fluid">
+
+
+     <a class="navbar-brand">
+     <img src="logo/Acacia.png" alt="Logo" width="130" height="90" style="padding-bottom: 30px;">
+     </a>
+
+
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+     </button>
+
+
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+       <li class="nav-item">
+         <a class="nav-link text-white" href="index.html">Home</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-white" href="about.html">About Us</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-white" href="gallery.html">Gallery</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-white" href="contacts.html">Contact</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-white" href="registration.html">Apply Now</a>
+       </li>
+
+      </ul>
+    </div>
+
+   </div>
+  </nav>
+
 
 <main>
-<img src="Screenshot 2026-04-14 110918.png" alt="Acacia" width="100%" height="300" style="margin:none;">
+<img src="Screenshot 2026-04-14 110918.png" alt="Acacia" width="100%" height="300">
 
 
 <h1 style="text-align:center; border-bottom: 3px green solid; padding-bottom:20px;">About Acacia Primary and Pre-Primary School</h1>
@@ -79,7 +125,7 @@
 
 <div>
   <h2 style="padding-top:30px; border-bottom: 3px green solid;">CURRICLULUMN OFFERED: PSLE</h2>
-     <table style="float: left;">
+     <table class="table table-striped" style="float: left; width:45%;">
   <tr>
     <th>Standard 1-4</th>
     <th>Standard 5-7</th>
@@ -129,7 +175,7 @@
     <td>Religious and Moral Education</td>
   </tr>
 </table>
-  <img src="Screenshot 2026-04-14 110808.png" alt="Students in Hallway" width="500" height="560" class="img">
+  <img src="Screenshot 2026-04-14 110808.png" alt="Students in Hallway" width="430" height="415" class="img">
 </div>
    
 <div>
@@ -174,28 +220,29 @@
 
     <h2 style="border-bottom: 3px green solid; padding-top: 100px;">Our School Song</h2>
 
-     <img src="Opportunities/Screenshot 2026-04-09 202351.png" alt="Students Working Together" Width="400" height="430" id="song" >
+     <img src="Opportunities/Screenshot 2026-04-09 202351.png" alt="Students Working Together" Width="430" height="460" id="song" >
+
     <ul id="ulsong">
 
        <li>The acacia tree is hardy and strong,</li>
        <li>robust, proud, and living long</li>
        <li>That's what we all strive to be</li>
-       <li style="padding-bottom: 30px;">under the banner of the acacia tree</li>
+       <li style="padding-bottom: 20px;">under the banner of the acacia tree</li>
 
        <li>Thuto, botlhaga, le kgolo-mmogo</li>
        <li>the strongest tree's always live on forever</li>
        <li>learning, working, growing together</li>
-       <li style="padding-bottom: 30px;">the strongest trees always live on forever</li>
+       <li style="padding-bottom: 20px;">the strongest trees always live on forever</li>
 
        <li>throughout Botswana's dusty panes,</li>
        <li> as dust falls the sunset wanes</li>
-       <li>the acaia stand out in relief</li>
-       <li style="padding-bottom: 30px;"> form of resolve...</li>
+       <li>the acacia stand out in relief</li>
+       <li style="padding-bottom: 20px;"> form of resolve, in form of belief</li>
 
        <li> Thuto, botlhaga, le kgolo-mmogo</li>
        <li>the strongest tree's always live on forever</li>
        <li>learning, working, growing together</li>
-       <li style="padding-bottom: 30px;">the strongest trees always live on forever</li>
+       <li style="padding-bottom: 20px;">the strongest trees always live on forever</li>
     </ul>
    
   </div>  
@@ -210,6 +257,9 @@
    <p>@2026 Acacia Primary & Pre-Primary School</p>
 </footer>
 </main>
+
+<button id="backToTop">&#8593;</button>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
