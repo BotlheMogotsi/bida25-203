@@ -246,3 +246,9 @@ transition: opacity 0.3s ease;
 #backToTop:hover{
 background-color: #fedd06;
 }
+
+ @media(min-width:992px){
+     body{
+       .navbar-brand{ padding-top: 30px;}  
+         }
+        }
