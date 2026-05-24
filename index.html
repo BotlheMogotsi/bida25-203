@@ -21,19 +21,17 @@
      font-weight: bold;
      text-align: center;
      font-size: medium;
+     padding: 5%;
     }
-    
+    .card-text{
+      text-align: center;
+    }
     @media(max-width: 600px){
      .navbar-collapse .nav-link{
         color:rgb(0, 0, 0) !important;
      }
     }
-    @media(min-width: 768px){
-     .navbar-brand{
-        padding-bottom: 0;
-        padding-top: 30px;
-     }
-    }
+    
 
     </style>
 </head>
@@ -44,38 +42,38 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(3, 105, 3); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
    <div class="container-fluid">
 
-<!-- Logo -->
+
      <a class="navbar-brand">
      <img src="logo/Acacia.png" alt="Logo" width="130" height="90" style="padding-bottom: 30px;">
      </a>
 
-<!-- Hamburger button -->
+
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
      </button>
 
-<!-- Menu links -->
+
      <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
 
        <li class="nav-item">
-       <a class="nav-link text-white" href="index.html">Home</a>
+        <a class="nav-link text-white" href="index.html">Home</a>
        </li>
 
        <li class="nav-item">
-       <a class="nav-link text-white" href="about.html">About Us</a>
+        <a class="nav-link text-white" href="about.html">About Us</a>
        </li>
 
        <li class="nav-item">
-       <a class="nav-link text-white" href="gallery.html">Gallery</a>
+        <a class="nav-link text-white" href="gallery.html">Gallery</a>
        </li>
 
        <li class="nav-item">
-       <a class="nav-link text-white" href="contacts.html">Contact</a>
+        <a class="nav-link text-white" href="contacts.html">Contact</a>
        </li>
 
        <li class="nav-item">
-       <a class="nav-link text-white" href="registration.html">Apply Now</a>
+        <a class="nav-link text-white" href="registration.html">Apply Now</a>
        </li>
 
       </ul>
@@ -113,7 +111,8 @@
        Acacia Primary School is one of the best Private primary schools in Jwaneng Botswana 
      </p>
     </div>
-    <h1 style="text-align: center; ">OUR VALUES</h1>
+    
+    <h1 style="text-align: center; padding-top: 60px ">OUR VALUES</h1>
     <div class="circle-container">
       <div class="circle-card">
         <h3>Respect</h3>
@@ -167,7 +166,7 @@
 </footer>
 
 
-<button id="backToTop"></button>
+<button id="backToTop">&#8593;</button>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
